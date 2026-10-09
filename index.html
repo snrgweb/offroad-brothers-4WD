@@ -185,6 +185,42 @@
 }
 
 </style>
+<style>
+
+/* Mobile only: balance the existing card back without altering desktop/laptop styling or flip mechanics. */
+@media (max-width: 767px) {
+  .service-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(12px, 3.5vw, 22px);
+    padding: clamp(17px, 5vw, 28px) clamp(18px, 6vw, 30px);
+    text-align: left;
+  }
+  .service-card-back .service-back-top {
+    margin: 0;
+    flex: 0 0 auto;
+  }
+  .service-card-back .service-bullets {
+    margin: 0;
+    gap: clamp(9px, 2.8vw, 16px);
+    flex: 0 0 auto;
+  }
+  .service-card-back .service-back-footer {
+    margin: 0;
+    gap: clamp(8px, 2vw, 12px);
+    flex: 0 0 auto;
+  }
+  .service-card-back .service-cta { min-height: 44px; text-align: center; }
+  .service-card-back .service-note { text-align: center; }
+}
+@media (max-width: 767px) and (max-height: 680px) {
+  .service-card-back { gap: 9px; padding-block: 13px; }
+  .service-card-back .service-bullets { gap: 7px; }
+}
+
+</style>
 </head>
 <body>
   <h1 class="sr-only">Houston's Family-Owned Off-Road & 4WD Shop — Lift Kits, Suspension, Tires & Wheels</h1>
@@ -488,6 +524,48 @@
 </h2>
 <div aria-label="Google reviews slider" class="g-slider-shell">
 <div class="g-slider" id="gReviewSlider" tabindex="0">
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">T M</div><div class="g-sub">2 days ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">This was my second experience with Offroad brothers and it feels as if I’ve known them forever. Great guys!! I got my wheels replaced, aligned and balanced. Also looked into the feasibility of an extra wheel and slightly larger-than-stock …</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">Thank you so much tm for your support, and welcome to the offroadbrothers family</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">Kyle Kirst</div><div class="g-sub">a month ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Julio at Offroad Brothers went above and beyond, and "thank you" simply isn’t enough. I’m used to Overlanding in the Middle East with very heavy/specific mods. I will be using Julio for my Land Crusier 200 build in the USA because they are honest, hardworking bros that know their stuff! Exceptional quality and service.</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">Thank you so much Kyle welcome to offroadbrothers family</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">Raymond Jones</div><div class="g-sub">a month ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Julio is great he knows trucks. Turned my Tundra into a monster.</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">thank you so much Raymond and welcome to the offroadbrothers family</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">Oliver</div><div class="g-sub">a month ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Called several shops around Houston for help with modifications to my stock 4Runner TRD PRO, and Julio from Offroad Brothers proved to be a great resource. …</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">Thank you so much Oliver, welcome to the offroadbrothers family</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">molly loomis</div><div class="g-sub">a month ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Whoever was there Saturday is so nice! Thanks again!</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">thanks alot molly</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">Dylan Hernandez</div><div class="g-sub">2 months ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Fast turnaround time, knowledgeable, great service</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">Thank you so much Dylan and welcome to offroadbrothers family</div></div>
+</article></div>
+<div class="g-slide"><article class="g-review">
+<div class="g-head"><div aria-hidden="true" class="g-avatar"></div><div class="g-meta"><div class="g-name">David</div><div class="g-sub">2 months ago</div></div><svg aria-hidden="true" class="gmark" viewbox="0 0 24 24"><path d="M12 10.2v3.6h5.1c-.3 1.9-2 4.2-5.1 4.2a6 6 0 1 1 0-12c1.7 0 2.9.7 3.6 1.4l2.4-2.3C16.5 3.6 14.4 2.7 12 2.7 6.9 21.3 12 21.3c5.8 0 9.6-4.1 9.6-9.9 0-.7-.1-1.2-.2-1.7H12z"></path></svg></div>
+<div class="g-stars"><span class="g-badge">Google review</span></div>
+<p class="g-text">Great service from Julio. I would definitely recommend this place to have your vehicle service. Julio and his brother took their time servicing my Jeep. Great service and fast delivery on the parts that I needed for my Jeep.</p>
+<div class="g-reply"><div class="g-reply-k">Owner</div><div class="g-reply-v">Thank you so much David, and welcome to the offroadbrothers family</div></div>
+</article></div>
 <div class="g-slide"><article class="g-review">
 <div class="g-head">
 <div aria-hidden="true" class="g-avatar"></div>
